@@ -1,0 +1,24 @@
+<%- include("../partials/header.ejs") %>
+<%- include("../partials/navbar.ejs") %>
+
+<div class="container mt-3 mb-5">
+    <h2 class="text-center">
+        Cliente Compra maior de 2016
+     </h2>
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 pt-5 text-center">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center">Nome Cliente: <%= clientBiggerLast.nome %></h4>
+                </div>
+                <div class="card-body">
+                    <p class="color-text-b">Data: <label class="data"><%= clientBiggerLast.data %></label></p>
+                    <p class="color-text-b">CPF:  <%= clientBiggerLast.cpf %></p>
+                    <p class="color-text-b">Valor Total: R$ <%= clientBiggerLast.valorTotal %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>

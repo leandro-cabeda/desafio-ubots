@@ -1,0 +1,26 @@
+<%- include("../partials/header.ejs") %>
+<%- include("../partials/navbar.ejs") %>
+
+<div class="container mt-3 mb-5">
+    <h2 class="text-center">
+        Lista Ordenação de Clientes por Valores Maiores
+     </h2>
+    <div class="row">
+         <% clientsBiggerValue.forEach(client => { %>
+        <div class="col-12 col-md-4 pt-5 text-center">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="text-center">Nome Cliente: <%= client.nome %></h4>
+                </div>
+                <div class="card-body">
+                    <p class="color-text-b">Data: <label class="data"><%= client.data %></label></p>
+                    <p class="color-text-b">CPF:  <%= client.cpf %></p>
+                    <p class="color-text-b">Valor Total: R$ <%= client.valorTotal %></p>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>

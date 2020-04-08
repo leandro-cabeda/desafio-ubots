@@ -1,0 +1,22 @@
+body{
+    background: #9fb2be;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-text{
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.color-text-w{
+    color: white;
+    font-weight: bold;
+}
+
+.color-text-b{
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
